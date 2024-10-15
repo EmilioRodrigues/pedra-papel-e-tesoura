@@ -2,7 +2,10 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .video-box {
@@ -29,21 +32,66 @@ body, html {
 }
 
 .container {
-    width: 200px;
-    height: 300px;
     position: relative;
     z-index: 1;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Caixa de fundo clara */
+    background: rgba(255, 255, 255, 0.8); Caixa de fundo clara
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limita a largura máxima da seção */
+    width: 100%; /* Garante que a seção ocupe 100% da largura disponível */
+    margin: 0 20px; /* Adiciona margem lateral para evitar que a seção toque as bordas da tela */
+    min-width: 300px
+    
+}
+.buttons{
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.your-score span {
-    color: red; /* Cor vermelha para sua pontuação */
+button{
+    padding: 5.0px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    }
+
+
+button:hover{
+    opacity: 0.6;
+    scale: 95%;
+
 }
 
-.machine-score span {
-    color: blue; /* Cor azul para a pontuação da máquina */
+#pedra{
+    background-color: blueviolet;
+}
+
+#papel{
+    background-color: chartreuse;
+}
+
+#tesoura{
+    background-color: crimson;
+}
+
+p{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.your-score span{
+    color: blue;
+}
+
+.machine-score span{
+    color: red;
 }
