@@ -1,74 +1,36 @@
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
 }
 
-body {
-    background: url(./img/3f4c0807-dbd3-4c08-b9fb-cdfcba223ca8.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
+.video-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    overflow: hidden;
 }
 
-.container{
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.video-box video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
-.buttons{
-    margin: 30px 0;
-    display: flex;
-    gap: 20px;
-}
-
-button{
-    padding: 5.0px;
-    font-size: 50px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    transition: opacity 0.3s ease-in-out;
-    }
-
-
-button:hover{
-    opacity: 0.6;
-    scale: 95%;
-
-}
-
-#pedra{
-    background-color: blueviolet;
-}
-
-#papel{
-    background-color: chartreuse;
-}
-
-#tesoura{
-    background-color: crimson;
-}
-
-p{
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.your-score span{
-    color: blue;
-}
-
-.machine-score span{
-    color: red;
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
 }
