@@ -29,8 +29,21 @@ body, html {
 }
 
 .container {
+    width: 200px;
+    height: 300px;
     position: relative;
     z-index: 1;
     text-align: center;
-    color: white;
+    background: rgba(255, 255, 255, 0.8); /* Caixa de fundo clara */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.your-score span {
+    color: red; /* Cor vermelha para sua pontuação */
+}
+
+.machine-score span {
+    color: blue; /* Cor azul para a pontuação da máquina */
 }
