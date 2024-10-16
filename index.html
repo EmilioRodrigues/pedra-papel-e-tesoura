@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Jo Ken Po</title>
 </head>
 
@@ -15,9 +16,9 @@
         <h1>Faça sua escolha</h1>
         
         <div class="buttons">
-            <button id="pedra">&#x1F44A</button>
-            <button id="papel">&#x1F590</button>
-            <button id="tesoura">&#x270C</button>
+            <button id="pedra" onclick="playHuman('pedra')">&#x1F44A</button>
+            <button id="papel" onclick="playHuman('papel')">&#x1F590</button>
+            <button id="tesoura" onclick="playHuman('tesoura')">&#x270C</button>
         </div>
         
         <p class="your-score">Sua pontuação: <span>0</span></p><br>
