@@ -20,9 +20,17 @@
             <button id="papel" onclick="playHuman('papel')">&#x1F590</button>
             <button id="tesoura" onclick="playHuman('tesoura')">&#x270C</button>
         </div>
+
+        <p class="result"></p>
         
-        <p class="your-score">Sua pontuação: <span>0</span></p><br>
-        <p class="machine-score">Pontuação do Algs: <span>0</span></p>
+        <p class="your-score">Sua pontuação: <span id="human-score">0</span></p><br>
+        <p class="machine-score">Pontuação do Algs: <span id="machine-score">0</span></p>
+
+        <div>
+            <button class="reset" onclick="resetGame()">Novo Jogo</button>
+
+        </div>
+        
     </div>
 
 

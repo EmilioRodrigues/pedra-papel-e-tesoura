@@ -31,7 +31,7 @@ body {
     gap: 20px;
 }
 
-button{
+button {
     padding: 5.0px;
     font-size: 50px;
     cursor: pointer;
@@ -71,4 +71,18 @@ p{
 
 .machine-score span{
     color: red;
+}
+
+button.reset{
+padding: 5.0px;
+cursor: pointer;
+border: none;
+border-radius: 5.0px;
+transition: opacity 0.3s ease-in-out;
+background-color: black;
+color: white;
+margin-top: 20px;
+font-size: 1.4rem;
+padding: 10px;
+
 }
