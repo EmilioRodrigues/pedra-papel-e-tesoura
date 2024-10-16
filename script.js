@@ -5,6 +5,13 @@ const machineScore = document.querySelector('#machine-score');
 let humanScoreNumber = 0;
 let machineScoreNumber = 0;
 
+//ENUMS - para troca de qualquer elemento de texto dentro do codigo
+const GAME_OPTIONS = {
+    PEDRA: "pedra",
+    PAPEL: "papel",
+    TESOURA: "tesoura"
+}
+
 const result = document.querySelector('.result');
 
 const playHuman = (humanChoice) => {
@@ -12,7 +19,7 @@ const playHuman = (humanChoice) => {
 }
 
 const playMachine = () => {
-    const choices = ['pedra', 'papel', 'tesoura'];
+    const choices = [GAME_OPTIONS.PEDRA, GAME_OPTIONS.PAPEL, GAME_OPTIONS.TESOURA];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
@@ -22,9 +29,9 @@ const playTheGame = (human, machine) => {
 
     if (human === machine) {
         result.innerHTML = "Deu empate.";
-    } else if ((human === 'papel' && machine === 'pedra') || 
-        (human === 'pedra' && machine === 'tesoura') ||
-        (human === 'tesoura' && machine === 'papel')) {
+    } else if ((human === GAME_OPTIONS.PAPEL && machine === GAME_OPTIONS.PEDRA) ||
+        (human === GAME_OPTIONS.PEDRA && machine === GAME_OPTIONS.TESOURA) ||
+        (human === GAME_OPTIONS.TESOURA && machine === GAME_OPTIONS.PAPEL)) {
         humanScoreNumber++;
         humanScore.innerHTML = humanScoreNumber;
         result.innerHTML = "Você ganhou";
