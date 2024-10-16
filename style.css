@@ -42,9 +42,9 @@ body, html {
     max-width: 600px; /* Limita a largura máxima da seção */
     width: 100%; /* Garante que a seção ocupe 100% da largura disponível */
     margin: 0 20px; /* Adiciona margem lateral para evitar que a seção toque as bordas da tela */
-    min-width: 300px
+    min-width: 300px;
+    }
     
-}
 .buttons{
     margin: 30px 0;
     display: flex;
